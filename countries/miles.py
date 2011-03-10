@@ -76,6 +76,17 @@ regions = {"NorthAmerica": [12.5, 25, 25, 70],
            }
 total += [[code, filename, regions]]
 
+# Frontier
+code = "F9"
+filename = "regions.list.frontier"
+regions = {"US": [12.5, 12.5, 12.5, 12.5],
+           "Mexico": [17.5, 17.5, 17.5, 17.5],
+           "CostaRica": [17.5, 17.5, 17.5, 17.5],
+           }
+total += [[code, filename, regions]]
+
+
+
 
 def airlines(code, filename, regions, csv):
     data = open(filename, "r")
