@@ -97,16 +97,19 @@ total += [[code, filename, regions]]
 # British
 code = "BA"
 filename = "regions.list.british"
-regions = {"Europe1": [50, 50, 50, 50],
-           "Europe2": [60, 60, 60, 60],
-           "Europe3": [65, 65, 65, 65],
-           "MiddleEast": [80, 80, 80, 80],
-           "WestAfrica": [80, 80, 80, 80],
-           "CentralAfrica": [90, 90, 90, 90],
-           "SouthAsia": [90, 90, 90, 90],
-           "FarEast": [120, 120, 120, 120],
-           "Pacific": [140, 140, 140, 140],
+regions = {"Europe1": [50, 75, 100, 150],
+           "Europe2": [60, 90, 120, 180],
+           "Europe3": [65, 97.5, 130, 195],
+           "MiddleEast": [80, 120, 160, 240],
+           "WestAfrica": [80, 120, 160, 240],
+           "CentralAfrica": [90, 135, 180, 270],
+           "SouthAsia": [90, 135, 180, 270],
+           "FarEast": [120, 180, 240, 360],
+           "Pacific": [140, 210, 280, 420],
            }
+## These are actually return trips, should halve them
+for region in regions.keys():
+    regions[region] = [x*0.5 for x in regions[region]]
 total += [[code, filename, regions]]
 
 
