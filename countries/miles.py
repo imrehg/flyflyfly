@@ -39,6 +39,22 @@ regions = {"Continental": [12.5, 30, 22.5, 50],
           }
 total += [[code, filename, regions]]
 
+# US Airways
+code = "US"
+filename = "regions.list.usair"
+regions = {"Continental": [25, 25, 50, 50],
+           "Caribbean": [35, 35, 60, 60],
+           "MexicoCentral": [35, 35, 60, 60], 
+           "SouthAmerica": [60, 60, 100, 125],
+           "Europe": [60, 60, 100, 125],
+           "NorthAsia": [60, 60, 90, 120],
+           "SouthCentralAsia": [80, 80, 120, 160],
+           "SouthPacific": [80, 80, 110, 140],
+           "MiddleEast": [80, 80, 120, 180],
+           "Africa": [70, 70, 110, 150],
+          }
+total += [[code, filename, regions]]
+
 
 def airlines(code, filename, regions, csv):
     data = open(filename, "r")
@@ -48,7 +64,6 @@ def airlines(code, filename, regions, csv):
         clist = countries.split(",")
         prices = regions[region]
         origin = "US"
-        code = "AA"
         for cname in clist:
             p1 = [code, origin, cname, prices[0], prices[1], "ECO"]
             p2 = [code, origin, cname, prices[2], prices[3], "FIRST"]
@@ -56,4 +71,5 @@ def airlines(code, filename, regions, csv):
             out.writerow(p2)
 
 for line in total:
+    code, filename, regions = line
     airlines(code, filename, regions, csv)

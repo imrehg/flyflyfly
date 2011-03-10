@@ -27,8 +27,6 @@ def dorun(header, continent):
     continentlist = continent.replace(", ",",").split(',')
     getlist(continentlist,data, header)
 
-
-
 ##### Delta Airlines
 delta = {"Continental" : "United States, Canada",
           "Caribbean" : "Anguilla, Antigua and Barbuda, Aruba, Bahamas, Barbados, Bermuda, Bonaire and Saint Eustatius and Saba, British Virgin Islands, Cayman Islands, Cuba, Curacao, Dominica, Dominican Republic, Grenada, Guadeloupe, Guyana, Haiti, Jamaica, Martinique, Montserrat, Saint Kitts and Nevis, Saint Lucia, Sint Maarten, Saint Vincent and the Grenadines, Trinidad and Tobago, Turks and Caicos Islands, US Virgin Islands, Puerto Rico",
@@ -45,14 +43,28 @@ delta = {"Continental" : "United States, Canada",
           "SouthWestPacific": "American Samoa, Australia, Christmas Island, Cocos (Keeling) Islands, Cook Islands, Fiji, French Polynesia, Kiribati, Nauru, New Caledonia, New Zealand, Niue, Norfolk Island, Pitcairn, Samoa, Solomon Islands, Tokelau, Tonga, Tuvalu, Vanuatu, Wallis and Futuna Islands",
           "SouthAfrica": "South Africa",
           }
-DEBUG = False
 airline = delta
+
+
+##### US Airways (
+usair = {"Continental": "United States, Canada",
+         "Caribbean": "Anguilla, Antigua and Barbuda, Aruba, Bahamas, Barbados, Bermuda, Bonaire and Saint Eustatius and Saba, British Virgin Islands, Cayman Islands, Cuba, Curacao, Dominica, Dominican Republic, Grenada, Guadeloupe, Guyana, Haiti, Jamaica, Martinique, Montserrat, Saint Kitts and Nevis, Saint Lucia, Sint Maarten, Saint Vincent and the Grenadines, Trinidad and Tobago, Turks and Caicos Islands, US Virgin Islands, Puerto Rico",
+         "MexicoCentral": "Mexico, Belize, Costa Rica, El Salvador, Guatemala, Honduras, Nicaragua, Panama",
+         "SouthAmerica": "Bolivia, Colombia, Ecuador, Peru, Venezuela, French Guiana, Suriname, Argentina, Brazil, Chile, Paraguay, Uruguay",
+         "Europe": "Albania, Algeria, Andorra, Armenia, Austria, Azerbaijan, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Faroe Islands, Finland, France, Georgia, Germany, Gibraltar, Greece, Hungary, Iceland, Ireland, Italy, Latvia, Liechtenstein, Lithuania, Luxembourg, Macedonia, Malta, Moldova, Montenegro, Monaco, Morocco, Netherlands, Norway, Poland, Portugal, Romania, Russia, San Marino, Serbia, Slovakia, Slovenia, Spain, Svalbard and Jan Mayen, Sweden, Switzerland, Tunisia, Turkey, Ukraine, United Kingdom, Vatican City",
+         "NorthAsia": "China, Hong Kong, Japan, Kazakhstan, Kyrgyzstan, Macau, Mongolia, South Korea, Taiwan, Tajikistan, Turkmenistan, Uzbekistan",
+         "SouthCentralAsia": "Afghanistan, Bangladesh, Brunei Darussalam, Cambodia, India, Indonesia, Laos, Malaysia, Maldives, Myanmar, Nepal, Pakistan, Philippines, Singapore, Sri Lanka, Thailand, Vietnam",
+         "SouthPacific": "American Samoa, Australia, Christmas Island, Cocos (Keeling) Islands, Cook Islands, Fiji, French Polynesia, Kiribati, Nauru, New Caledonia, New Zealand, Niue, Norfolk Island, Pitcairn, Samoa, Solomon Islands, Tokelau, Tonga, Tuvalu, Vanuatu, Wallis and Futuna Islands",
+          "MiddleEast": "Bahrain, Egypt, Iran, Iraq, Israel, Jordan, Kuwait, Lebanon, Occupied Palestinian Territory, Oman, Qatar, Saudi Arabia, Syria, United Arab Emirates, Yemen, Kazakhstan, Kyrgyzstan, Uzbekistan",
+         "Africa": "Angola, Benin, Botswana, Burkina Faso, Burundi, Cameroon, Cape Verde, Central African Republic, Chad, Comoros, Congo-Brazzaville, Congo-Kinshasa, Ivory Coast, Djibouti, Equatorial Guinea, Eritrea, Ethiopia, Gabon, Gambia, Ghana, Guinea, Guinea-Bissau, Libyan Arab Jamahiriya, Kenya, Lesotho, Liberia, Madagascar, Malawi, Mali, Mauritania, Mauritius, Mayotte, Mozambique, Namibia, Niger, Nigeria, Reunion, Rwanda, Sao Tome and Principe, Senegal, Seychelles, Sierra Leone, Somalia, Swaziland, Tanzania, Togo, Uganda, Zambia, Zimbabwe, Sudan, South Africa",
+          }
+airline = usair
+
+DEBUG=False
 for header in airline.keys():
-    # if header == "SouthWestPacific":
-    #     dorun(header, airline[header])
     dorun(header, airline[header])
 
-###########
+########### American Airlines
 # header = "Africa"
 # continent = "Algeria, Angola, Benin, Botswana, Burkina Faso, Burundi, Cameroon, Cape Verde, Central African Republic, Chad, Congo, Equatorial Guinea, Eritrea, Ethiopia, Gabon, Gambia, Ghana, Guinea, Guinea-Bissau, Ivory Coast, Kenya, Lesotho, Liberia, Libyan Arab Jamahiriya, Madagascar, Malawi, Mali, Mauritania, Mauritius, Melilla, Morocco, Mozambique, Namibia, Niger, Nigeria, Republic of Congo, Reunion, Rwanda, Senegal, Seychelles, Sierra Leone, Somalia, South Africa, Sudan, Swaziland, Tanzania, Togo, Tunisia, Uganda, Zambia, Zimbabwe"
 # continentlist = continent.replace(", ",",").split(',')
