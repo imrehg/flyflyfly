@@ -60,7 +60,26 @@ usair = {"Continental": "United States, Canada",
           }
 airline = usair
 
-DEBUG=False
+##### United
+united = {"NorthAmerica": "United States, Canada",
+         "Caribbean": "Antigua and Barbuda, Aruba, Bahamas, Barbados, Bermuda, British Virgin Islands, Dominican Republic, Grenada, Guadeloupe, Cayman Islands, Haiti, Jamaica, Martinique, Netherlands Antilles, Puerto Rico, Saint Lucia, Saint Kitts and Nevis, Trinidad and Tobago, Turks and Caicos Islands, US Virgin Islands",
+          "CentralAmerica": "Belize, Costa Rica, El Salvador, Guatemala, Honduras, Mexico, Nicaragua, Panama",
+          "NorthSouthAm": "Colombia, Ecuador, French Guiana, Guyana, Peru, Suriname, Venezuela",
+          "SouthSouthAmerica": "Argentina, Bolivia, Brazil, Chile, Paraguay, Uruguay",
+          "Europe": "Albania, Armenia, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, Croatia, Cyprus, Czech Republic, Denmark, Estonia, Finland, France, Germany, Greece, Greenland, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Macedonia, Malta, Moldova, Montenegro, Netherlands, Norway, Poland, Portugal, Romania, Russia, Serbia, Slovakia, Slovenia, Spain, Sweden, Switzerland, Turkey, Ukraine, United Kingdom",
+          "NorthAsia": "China, Guam, Mongolia, South Korea, Taiwan",
+          "Japan": "Japan",
+          "SouthAsia": "Bangladesh, Brunei Darussalam, Cambodia, Hong Kong, Indonesia, Laos, Macau, Myanmar, Philippines, Singapore, Thailand, Vietnam",
+          "CentralAsia": "India, Kazakhstan, Kyrgyzstan, Maldives, Nepal, Pakistan, Sri Lanka, Turkmenistan, Uzbekistan",
+          "OzKiwi": "New Zealand, Australia, Norfolk Island",
+          "Oceania": "Cook Islands, Fiji, Micronesia, Marshall Islands, New Caledonia, Northern Mariana Islands, Palau, French Polynesia, Tonga, Vanuatu, Samoa",
+          "MiddleEast": "Azerbaijan, Bahrain, Egypt, Iran, Iraq, Israel, Jordan, Kuwait, Lebanon, Oman, Qatar, Saudi Arabia, Syria, United Arab Emirates, Yemen",
+          "NorthAfrica": "Algeria, Angola, Benin, Burkina Faso, Burundi, Cameroon, Central African Republic, Chad, Comoros, Congo, Ivory Coast, Djibouti, Equatorial Guinea, Eritrea, Ethiopia, Gabon, Gambia, Ghana, Guinea, Guinea-Bissau, Congo-Kinshasa, Kenya, Liberia, Mauritania, Mauritius, Morocco, Niger, Nigeria, Rwanda, Sao Tome and Principe, Senegal, Seychelles, Sierra Leone, Somalia, Sudan, Tanzania, Togo, Tunisia, Uganda",
+          "CentralSouthAfrica": "Botswana, Lesotho, Madagascar, Malawi, Mozambique, Namibia, Reunion, South Africa, Swaziland, Zambia, Zimbabwe"
+          }
+airline = united
+
+# DEBUG=False
 for header in airline.keys():
     dorun(header, airline[header])
 

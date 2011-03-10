@@ -55,6 +55,27 @@ regions = {"Continental": [25, 25, 50, 50],
           }
 total += [[code, filename, regions]]
 
+# United
+code = "UA"
+filename = "regions.list.united"
+regions = {"NorthAmerica": [12.5, 25, 25, 70],
+           "Caribbean": [17.5, 35, 40, 80],
+           "CentralAmerica": [17.5, 35, 40, 80],
+           "NorthSouthAm": [17.5, 35, 40, 80],
+           "SouthSouthAmerica": [27.5, 55, 67.5, 135],
+           "Europe": [27.5, 55, 67.5, 135],
+           "Japan": [32.5, 65, 67.5, 135],
+           "NorthAsia": [32.5, 65, 72.5, 145],
+           "SouthAsia": [32.5, 65, 72.5, 145],
+           "CentralAsia": [40, 40, 60, 80],
+           "OzKiwi": [40, 80, 80, 160],
+           "Oceania": [40, 40, 60, 74],
+           "MiddleEast": [37.5, 75, 72.5, 145],
+           "NorthAfrica": [37.5, 90, 72.5, 160],
+           "CentralSouthAfrica": [45, 45, 62.5, 80],
+           }
+total += [[code, filename, regions]]
+
 
 def airlines(code, filename, regions, csv):
     data = open(filename, "r")
