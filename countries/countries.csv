@@ -1,4 +1,7 @@
 Country_name,Country_code
+Montenegro,ME
+Svalbard and Jan Mayen,SJ
+Serbia,RS
 Bangladesh,BD
 Belgium,BE
 Burkina Faso,BF
@@ -118,7 +121,7 @@ Svalbarn and Jan Mayen Islands,SJ
 Finland,FI
 Fiji,FJ
 Falkland Islands (Malvinas),FK
-|Micronesia, Federated States of|,FM
+Micronesia,FM
 Faroe Islands,FO
 Nicaragua,NI
 Netherlands,NL
@@ -127,7 +130,7 @@ Namibia,NA
 Vanuatu,VU
 New Caledonia,NC
 Niger,NE
-Norfork Island,NF
+Norfolk Island,NF
 Nigeria,NG
 New Zealand,NZ
 Zaire,ZR
@@ -144,6 +147,9 @@ Chile,CL
 Cocos (Keeling) Islands,CC
 Canada,CA
 Congo,CG
+Democratic Republic of Congo,CD
+Congo-Brazzaville,CG
+Congo-Kinshasa,CD
 Central African Republic,CF
 Czech Republic,CZ
 Cyprus,CY
@@ -151,6 +157,9 @@ Christmas Island,CX
 Costa Rica,CR
 Cape Verde,CV
 Cuba,CU
+Curacao,CW
+Bonaire and Saint Eustatius and Saba,BQ
+Sint Maarten,SX
 Swaziland,SZ
 Syria,SY
 Kyrgyzstan,KG
@@ -196,10 +205,11 @@ Taiwan,TW
 Trinidad and Tobago,TT
 Turkey,TR
 Sri Lanka,LK
-East Timor,TP
+Timor-Leste,TL
 Liechtenstein,LI
 Latvia,LV
 Tonga,TO
+Pitcairn,PN
 Lithuania,LT
 Luxembourg,LU
 Liberia,LR
@@ -209,8 +219,9 @@ French Southern Territories,TF
 Togo,TG
 Chad,TD
 Turks and Caicos Islands,TC
+Occupied Palestinian Territory,PS
 Libyan Arab Jamahiriya,LY
-Vatican City State,VA
+Vatican City,VA
 Saint Vincent and the Grenadines,VC
 United Arab Emirates,AE
 Andorra,AD
