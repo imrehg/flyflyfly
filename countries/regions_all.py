@@ -86,6 +86,12 @@ frontier = {"US": "United States",
           }
 airline = frontier
 
+##### Alaska
+alaska = {"US": "United States",
+          "Mexico": "Mexico",
+          }
+airline = alaska
+
 DEBUG=False
 for header in airline.keys():
     dorun(header, airline[header])

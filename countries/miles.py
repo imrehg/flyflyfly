@@ -85,6 +85,14 @@ regions = {"US": [12.5, 12.5, 12.5, 12.5],
            }
 total += [[code, filename, regions]]
 
+# Alaska
+code = "AS"
+filename = "regions.list.alaska"
+regions = {"US": [12.5, 27.5, 25, 50],
+           "Mexico": [17.5, 32.5, 32.5, 60],
+           }
+total += [[code, filename, regions]]
+
 
 
 
