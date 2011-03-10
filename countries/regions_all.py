@@ -92,6 +92,19 @@ alaska = {"US": "United States",
           }
 airline = alaska
 
+##### British Airways
+british = {"Europe1": "Belgium, France, Germany, Ireland, Luxembourg, Netherlands, Switzerland, United Kingdom",
+           "Europe2": "Austria, Croatia, Czech Republic, Denmark, Gibraltar, Hungary, Italy, Norway, Poland, Portugal, Serbia, Spain, Sweden",
+           "Europe3": "Albania, Algeria, Bulgaria, Cyprus, Finland, Greece, Israel, Libyan Arab Jamahiriya, Morocco, Romania, Russia, Tunisia, Turkey, Ukraine",
+           "MiddleEast": "Bahrain, Egypt, Kuwait, Oman, Qatar, Saudi Arabia, United Arab Emirates",
+           "WestAfrica": "Ghana, Nigeria",
+           "CentralAfrica": "Angola, Kenya, Mauritius, Namibia, South Africa, Tanzania, Uganda, Zambia, Zimbabwe",
+           "SouthAsia": "India, Maldives",
+           "FarEast": "China, Hong Kong, Japan, Singapore, Thailand",
+           "Pacific": "Australia",
+           }
+airline = british
+
 DEBUG=False
 for header in airline.keys():
     dorun(header, airline[header])
